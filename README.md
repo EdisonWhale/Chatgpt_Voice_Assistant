@@ -44,7 +44,7 @@ git clone https://github.com/EdisonWhale/Chatgpt_Voice_Assistant.git
 Change directory into backend
 
 ```shell
-cd chatbot/backend
+cd backend
 ```
 
 ### Setup virtual environment
@@ -64,7 +64,7 @@ source venv/bin/activate
 Activate Virtual Environment (Windows)
 
 ```shell
-source venv/Scripts/activate
+.\venv\Scripts\activate
 ```
 
 Upgrade PIP
@@ -123,7 +123,7 @@ Change directory into frontend
 
 ```shell
 cd ..
-cd chatbot/frontend
+cd frontend
 ```
 
 Install packages
