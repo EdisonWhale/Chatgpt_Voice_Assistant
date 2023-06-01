@@ -1,5 +1,7 @@
 # uvicorn main:app
 # uvicorn main:app --reload
+# .\venv\Scripts\activate
+
 from typing import Union
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import StreamingResponse
@@ -20,7 +22,8 @@ origins = [
     "http://localhost:5174",
     "http://localhost:4173",
     "http://localhost:4174",
-    "http://localhost:3000",
+    "http://localhost:8000",
+    "http://localhost:3000"
 ]
 
 

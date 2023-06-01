@@ -2,6 +2,7 @@ import { useState } from "react";
 import Title from "./Title";
 import axios from "axios";
 import RecordMessage from "./RecordMessage";
+import WhaleImage from "../assets/Whale.png";
 
 const Controller = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -58,7 +59,15 @@ const Controller = () => {
   };
 
   return (
-    <div className="h-screen overflow-y-hidden">
+    <div
+      className="h-screen overflow-y-hidden"
+      style={{
+        backgroundImage: `url(${WhaleImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+        backgroundSize: "auto",
+      }}
+    >
       {/* Title */}
       <Title setMessages={setMessages} />
 
@@ -99,7 +108,7 @@ const Controller = () => {
 
           {messages.length == 0 && !isLoading && (
             <div className="text-center font-light italic mt-10">
-              Send Rachel a message...
+              Send AI Whale a message...
             </div>
           )}
 
